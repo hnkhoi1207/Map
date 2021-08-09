@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Map_exercise.User_Page">
+    <StackLayout Orientation="Vertical" Margin="0, 30, 0, 0">
+        <Image Source="user1.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" Margin="5, 10, 5, 5"/>
+        <Label x:Name="name" FontSize="Medium" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+        <!--<StackLayout Orientation="Horizontal" Margin="5, 10, 5, 5">
+            <Label Text="Mật khẩu" FontSize="Medium" VerticalOptions="Center"/>
+            <Button Text="Thay đổi" FontSize="Small" HeightRequest="50" HorizontalOptions="EndAndExpand" Margin="5,0,0,0" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+        <Button Text="Đăng xuất" Clicked="Button_Clicked" VerticalOptions="EndAndExpand"/>-->
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Change&#10;password" HeightRequest="70" Grid.Column="0" Clicked="Button_Clicked_1"/>
+            <Button Text="Sign out" HeightRequest="70" Grid.Column="1" Clicked="Button_Clicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Map_exercise.Map_Perform"
+             Appearing="ContentPage_Appearing"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="True">
+    <NavigationPage.TitleView>
+        <!--<StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label x:Name="lbluser" Text="Username here" VerticalOptions="Center" FontSize="Medium"/>
+                <Label x:Name="lblstatus" Text="status here" VerticalOptions="Center" FontSize="Small"/>
+            </StackLayout>
+            <Button x:Name="btnShow" Text="Show" HorizontalOptions="EndAndExpand" WidthRequest="60" HeightRequest="40" FontSize="Micro" Margin="0,0,10,0" Clicked="BtnShow_Clicked"/>
+        </StackLayout>-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label x:Name="lbluser" Grid.Row="0" Text="Username here" VerticalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
+                <Label x:Name="lblstatus" Grid.Row="1" Text="status here" VerticalOptions="Center" FontSize="Micro"/>
+            </Grid>
+
+            <Button x:Name="btnShow" Text="Show" Grid.Column="1" WidthRequest="60" HeightRequest="40" FontSize="Micro" Margin="0,0,10,0" Clicked="BtnShow_Clicked"/>
+        </Grid>
+    </NavigationPage.TitleView>
+
+    <StackLayout>
+        <Grid x:Name="infopanel" IsVisible="False">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnuser" Text="User" Grid.Column="0" Clicked="Btnuser_Clicked"/>
+                <Button x:Name="btnabout" Text="About" Grid.Column="1" Clicked="Btnabout_Clicked"/>
+            </Grid>
+
+            <StackLayout Grid.Row="1">
+                <Label Text=" Map view mode" BackgroundColor="DarkGray"/>
+                <Picker x:Name="pkMapmode" SelectedIndexChanged="PkMapmode_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Hybrid</x:String>
+                        <x:String>Satelite</x:String>
+                        <x:String>Street</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Label Text=" Currently watching" BackgroundColor="DarkGray"/>
+                <ListView x:Name="lvshow">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Padding="5">
+                                    <Image Source="user.png"></Image>
+                                    <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand"/>
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
+                                        <Label WidthRequest="100" Text="{Binding LastDate}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+                                        <Label WidthRequest="50" LineBreakMode="NoWrap" Text="{Binding LastLatitude}" VerticalOptions="CenterAndExpand"/>
+                                        <Label WidthRequest="50" LineBreakMode="NoWrap" Text="{Binding LastLongitude}" VerticalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <ViewCell.ContextActions>
+                                    <MenuItem x:Name="btnmapshow" Text="Show" CommandParameter="{Binding .}" Clicked="Btnmapshow_Clicked"/>
+                                    <MenuItem x:Name="btnrefresh" Text="Refresh" CommandParameter="{Binding .}" Clicked="Btnrefresh_Clicked"/>
+                                    <MenuItem x:Name="btndel" Text="Delete" CommandParameter="{Binding .}" Clicked="Btndel_Clicked"/>
+                                </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <Button x:Name="btnadd" Text="Add" Grid.Row="3" Clicked="Btnadd_Clicked"/>
+        </Grid>
+
+        <maps:Map x:Name="MyMap" IsShowingUser="true" MapType="Hybrid" Margin="0" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Map_exercise.Doimatkhau"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <StackLayout Orientation="Vertical" Margin="12" Padding="24" BackgroundColor="White">
+        <Entry IsPassword="True" Placeholder="Current password" x:Name="pass"/>
+        <Entry IsPassword="True" Placeholder="New password" x:Name="passnew"/>
+        <Entry IsPassword="True" Placeholder="Reenter new password" x:Name="passnew1"/>
+        <Grid VerticalOptions="EndAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Confirm_Button" Grid.Column="0" Text="OK" Clicked="Confirm_Button_Clicked"/>
+            <Button x:Name="Undo_Button" Grid.Column="1" Text="Cancel" Clicked="Undo_Button_Clicked"/>
+        </Grid>
+    </StackLayout>
+</pages:PopupPage>

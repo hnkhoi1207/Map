@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "rZaSon9M3sB3/gUnCwQ+6m3hx6ZZ/Qm3quT7afGZsXaOmFSKXTPPXxqyP50XzRazHL0VXqmalbbU1GoZTifQZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\khoih\\OneDrive\\Desktop\\code\\Map_exercise\\Map_exercise\\Map_exercise\\Map_exercise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khoih\\.nuget\\packages\\acr.userdialogs\\7.0.4\\acr.userdialogs.7.0.4.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\nuget.build\\2.12.1\\nuget.build.2.12.1.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\nuget.commandline\\4.9.3\\nuget.commandline.4.9.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\rg.plugins.popup\\1.1.5.188\\rg.plugins.popup.1.1.5.188.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.servicemodel.duplex\\4.5.3\\system.servicemodel.duplex.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.servicemodel.http\\4.5.3\\system.servicemodel.http.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.servicemodel.nettcp\\4.5.3\\system.servicemodel.nettcp.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\system.servicemodel.security\\4.5.3\\system.servicemodel.security.4.5.3.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xamarin.build.download\\0.4.4\\xamarin.build.download.0.4.4.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xamarin.essentials\\1.1.0\\xamarin.essentials.1.1.0.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xamarin.forms\\3.6.0.344457\\xamarin.forms.3.6.0.344457.nupkg.sha512",
+    "C:\\Users\\khoih\\.nuget\\packages\\xamarin.forms.maps\\3.6.0.344457\\xamarin.forms.maps.3.6.0.344457.nupkg.sha512"
+  ],
+  "logs": []
+}

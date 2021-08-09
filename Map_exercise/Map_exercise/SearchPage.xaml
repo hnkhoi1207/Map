@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Map_exercise.SearchPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Entry x:Name="txtkeyword" Placeholder="Keyword" Grid.Row="0"/>
+        <ListView x:Name="searchlist" Grid.Row="1" ItemSelected="Searchlist_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="user.png" Text="{Binding}" TextColor="Black"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid VerticalOptions="EndAndExpand" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnfind" Text="Find" Grid.Column="0" Clicked="Btnfind_Clicked"/>
+            <Button x:Name="btnback" Text="Back" Grid.Column="1" Clicked="Btnback_Clicked"/>
+        </Grid>
+    </Grid>
+</ContentPage>
